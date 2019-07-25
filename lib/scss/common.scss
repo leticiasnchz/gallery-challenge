@@ -1,0 +1,20 @@
+.alt {
+  position: absolute;
+  left: -9999px;
+}
+
+.alert {
+    color: $burnt-orange;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h2 { font-weight: bold; }
+
+.content-nav { text-align: center; }
+
+select { background-size: 10px; background: white url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==") no-repeat right 10px center; }
+.picker__footer button.picker__button--close { color: #333; }
+
+.picker__nav--disabled { opacity: .2; }
+.picker__nav--disabled:hover { background: none !important; cursor: default !important; }

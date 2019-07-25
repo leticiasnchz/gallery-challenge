@@ -1,0 +1,8 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+@import 'foundation/settings', // Foundation CSS framework variables
+        'foundation', // Foundation CSS framework
+        'font-awesome/font-awesome', // font-based icon set
+        'common', // this houses common utility classes
+        'mixins'; // custom mixins outside of bourbon and foundation

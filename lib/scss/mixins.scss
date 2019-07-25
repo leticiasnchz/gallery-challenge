@@ -1,0 +1,25 @@
+@mixin backface-visibility($value) {
+    -webkit-backface-visibility: $value;
+       -moz-backface-visibility: $value;
+        -ms-backface-visibility: $value;
+
+}
+
+@mixin border-radius($r){
+    -webkit-border-radius: $r;
+            border-radius: $r;
+}
+
+@mixin background-size($value) {
+    -webkit-background-size: $value;
+       -moz-background-size: $value;
+         -o-background-size: $value;
+            background-size: $value;
+}
+
+@mixin rotate($value) {
+	-webkit-transform: rotate($value);
+	-moz-transform: rotate($value);
+	-o-transform: rotate($value);
+	transform: rotate($value);
+}

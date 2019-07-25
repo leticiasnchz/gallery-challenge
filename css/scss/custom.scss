@@ -1,0 +1,114 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1 {
+  font-size: rem-calc(48);
+  font-weight: normal;
+  margin-left: .5%;
+  margin-top: 40px;
+
+  @media #{$medium-up} {
+    margin-left: 2%;
+  }
+
+  @media #{$large-up} {
+    margin-left: .5%;
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  .item {
+    width: 98%;
+    height: 300px;
+    padding: .5%;
+
+    @media #{$medium-up} {
+      width: 50%;
+      padding: 2%;
+    }
+
+    @media #{$large-up} {
+      width: 24.9%;
+      padding: .5%;
+    }
+  }
+  
+  .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.lightbox {
+	-webkit-overflow-scrolling: touch;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: fade-out($almost-black, .1);
+	z-index: 10000;
+	-webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+	overflow: auto;
+
+	.close-button {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    color: white;
+    font-weight: 100;
+    font-size: rem-calc(28);
+    letter-spacing: 1px;
+
+    @media #{$medium-up} {
+      font-size: rem-calc(26);
+    }
+
+    @media #{$large-up} {
+      font-size: rem-calc(16);
+    }
+  }
+
+	.lightbox-content-wrapper {
+		position: absolute;
+		width: 100%;
+		max-width: 1200px;
+		padding: 10px;
+		top: 50%;
+		left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    @media #{$large-up} {
+      padding: 100px;
+    }
+  }
+  
+  img {
+    display: block;
+    width: auto;
+    max-height: 80vh;
+    margin: 0 auto;
+
+    @media #{$large-up} {
+      max-height: 600px;
+    }
+
+  }
+
+	&.active { display: inline-block; }
+}
